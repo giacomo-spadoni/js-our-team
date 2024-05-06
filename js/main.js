@@ -6,3 +6,12 @@ const team = [
     { nome: 'Scott Estrada', ruolo: 'Developer', immagine: 'scott-estrada-developer.jpg' },
     { nome: 'Barbara Ramos', ruolo: 'Graphic Designer', immagine: 'barbara-ramos-graphic-designer.jpg' }
 ]
+
+for (let i = 0; i < team.length; i++) {
+    const member = team[i];
+    console.log(member.nome + ' - ' + member.ruolo)
+    // for (let key in member) {
+    //     console.log(member[key])
+    // }
+
+}
