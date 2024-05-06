@@ -12,7 +12,7 @@ const section = document.getElementById('cards')
 for (let i = 0; i < team.length; i++) {
     const member = team[i];
     section.innerHTML +=
-        `<div class="card mb-2" style="width: 18rem;">
+        `<div class="card" style="width: 18rem;">
         ${member.immagine}
         <div class="card-body">
             <h5 class="card-title">${member.nome}</h5>
