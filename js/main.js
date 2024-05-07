@@ -11,17 +11,20 @@ const section = document.getElementById('cards')
 
 for (let i = 0; i < team.length; i++) {
     const member = team[i];
-    section.innerHTML +=
-        `<div class="card" style="width: 18rem;">
-        ${member.immagine}
-        <div class="card-body">
-            <h5 class="card-title">${member.nome}</h5>
-            <p class="card-text">${member.ruolo}</p>
-        </div>
-    </div>`
+    section.innerHTML += createCard(member.immagine, member.nome, member.ruolo)
     /* console.log(member.nome + ' - ' + member.ruolo)
     for (let key in member) {
         console.log(member[key])
     } */
 
+}
+
+function createCard(immagine, nome, ruolo) {
+    return `<div class="card" style="width: 18rem;">
+    ${immagine}
+        <div class="card-body">
+            <h5 class="card-title">${nome}</h5>
+            <p class="card-text">${ruolo}</p>
+        </div>
+    </div>`
 }
